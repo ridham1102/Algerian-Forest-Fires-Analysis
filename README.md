@@ -38,6 +38,11 @@ An ordinary least squares (OLS) model is trained and evaluated using statistical
 
 To counteract overfitting and multicollinearity, Lasso (L1), Ridge (L2), and Elastic Net (combined L1 and L2) regressions are implemented. Each model is assessed on the same evaluation metrics to compare performance and determine the effect of varying penalty strengths.
 
+## Web Application
+
+In addition to the analysis, a web application was developed using Flask. This application allows users to input relevant environmental parameters and receive a predicted Fire Weather Index (FWI) value based on the trained regression model. The application provides a simple and accessible interface for real-time predictions.
+
+
 ## Results and Conclusions
 
 The findings demonstrate the trade-offs between bias and variance when employing regularization. While the OLS model offers an interpretable baseline, Lasso can eliminate irrelevant features and Ridge mitigates coefficient inflation. Elastic Net, as a hybrid approach, balances feature selection with coefficient shrinkage.
@@ -47,5 +52,6 @@ The findings demonstrate the trade-offs between bias and variance when employing
 1. Clone this repository.
 2. Install required dependencies listed in `requirements.txt`.
 3. Execute the Jupyter notebook `Algerian_Forest_Fires_Analysis.ipynb` to reproduce data processing steps and model training.
+4. To run the web application, navigate to the Flask app directory and execute the `app.py` file.
 
 
